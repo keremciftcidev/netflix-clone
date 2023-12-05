@@ -1,4 +1,5 @@
 import './App.css'
+import Banner from './Banner'
 import HomeScreen from './HomeScreen'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   <div className="app">
 
     <HomeScreen/>
+    
   </div>
   )
 }
