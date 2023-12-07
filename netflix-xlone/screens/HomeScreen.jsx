@@ -1,9 +1,9 @@
 
-import Banner from './Banner'
+import Banner from '../src/Banner'
 import './HomeScreen.css'
-import Nav from './Nav'
-import requests from './Requests'
-import Row from './Row'
+import Nav from '../src/Nav'
+import requests from '../src/Requests'
+import Row from '../src/Row'
 
 function HomeScreen() {
   return (

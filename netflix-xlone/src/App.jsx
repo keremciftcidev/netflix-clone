@@ -1,17 +1,24 @@
-import './App.css'
-import Banner from './Banner'
-import HomeScreen from './HomeScreen'
+import "./App.css";
 
+import HomeScreen from "../screens/HomeScreen";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginScreen from "../screens/LoginScreen";
 function App() {
-  
-
+  const user = null
   return (
-  <div className="app">
-
-    <HomeScreen/>
-    
-  </div>
-  )
+    <div className="app">
+      <Router>
+        {!user ? (
+          <LoginScreen />
+        ) : (
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
+           
+          </Routes>
+        )}
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
